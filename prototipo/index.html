@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prototipo-1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' media="screen" type='text/css' href='style.css' >
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <script src='script.js' defer></script>
+</head>
+  <body>
+
+    <!--Menu do site -->
+    
+    <header id="header">
+       
+     <!--------------itens do menu----------------------------------------------------------->
+             <!--icone do menu burguer, tipografia e logo-->
+     
+             <div id="burguer" onclick="openBurguer()">
+                 <div class="line"></div>
+                 <div class="line"></div>
+                 <div class="line"></div>
+             </div>
+             <div class="tipografia">
+                  <a href="/" class="tipo"> MOONVIES </a>
+             </div>
+             <!--icone do menu burguer, tipografia e logo-->
+     
+     
+             
+                 <div class="busca">
+                     <input id="search" class="pesquisar" type="search" placeholder="Pesquisar">
+                     
+                    </div>
+                    <i class="uil uil-search" id="icons" onclick="openSearch()"></i>
+     
+             <!--icone do menu burguer, tipografia e logo-->
+     
+             <!--itens do menu-->
+            
+         <!--------ENTRAR--------------->
+             <div class="login-button">
+                 <button><a href="#">Entrar</a></button>
+             </div>
+         <!--------ENTRAR--------------->
+            
+     <!--------------itens do menu----------------------------------------------------------->
+          <!--Menu do site -->
+    </header>
+  
+    <main>
+    <div id="nav-bar" class="itens">
+        <div class="nav-list" >
+            <div class="divnav">
+                <a href="" class="nav-link" id="navlink">Inicio</a>
+                <i class="uil uil-home" id="home"></i>
+            </div>
+            <div class="divnav">
+                <a href="" class="nav-link">Para você</a>
+                <i class="uil uil-fire" id="home"></i>
+            </div>
+            <div class="divnav">   
+                <a href="" class="nav-link">Cinema</a>
+                <i class="uil uil-film" id="home"></i>
+            </div>
+            
+            <div class="divnav">
+                <a href="" class="nav-link">Streaming</a>
+                <i class="uil uil-globe" id="home"></i>
+            </div>
+            <div class="divnav"> 
+                <a href="" class="nav-link">Podcasts e StandUps</a>
+                <i class="uil uil-microphone"id="home"></i>
+            </div>
+
+            <hr class="hr-nav">
+            
+            <div class="divnav1">
+                <a href="" class="nav-link">Sua conta</a>
+                <i class="uil uil-user" id="home"></i>
+            </div>
+            <div class="divnav1">
+                <a href="" class="nav-link">Configurações</a>
+                <i class="uil uil-setting" id="home"></i>
+            </div>
+            <div class="divnav1">
+                <a href="" class="nav-link">Fale conosco</a>
+                <i class="uil uil-megaphone" id="home"></i>
+            </div>
+            <div class="divnav1">
+                <a href="" class="nav-link">Denúncia</a>
+                <i class="uil uil-ban"id="home"></i>
+            </div>
+            <div class="divnav1">
+                <a href="" class="nav-link">Ajuda</a>
+                <i class="uil uil-question-circle" id="home"></i>
+            </div>
+            <div class="divnav1">
+                <a href="" class="nav-link">Feedback</a>
+                <i class="uil uil-chat-info" id="home"></i>
+            </div>
+            <hr>
+            <p class="direitos"> 
+                Sobre Imprensa Direitos autorais <br>
+                Entre em contato Criadores de conteúdo <br>
+                Publicidade Desenvolvedores<br>
+                Termos Privacidade Política e segurança <br>
+                Como funciona o Moonvies<br>
+                </p>
+        </div>
+
+    </div>
+            <!--slideshow-->
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+       
+                    <!--imagens do slide-->
+       
+                    <div class="slide s1">
+                        <img src="img/mariobros.jpg" alt="img1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/podpah.jpeg" alt="img2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/adaonegro.jpeg" alt="img3">
+                    </div>
+                    <div class="slide">
+                        <img src="img/ossonhosnaoenvelhecem.jpeg" alt="5">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar"for="slide4"></label>
+                </div>
+            </div>
+            <!--Artigos-->
+            <div class="Rartigos">
+                    <div class="Recentes">
+                        <h2>Recentes</h2> 
+                    
+                    </div>
+                    <hr id="hrR">
+                    <div class="artigos">
+                        <ul class="artigo">
+                            <li><img src="img/O-Mascara.jpg"></li>
+                            <li><h4>O Máscara</h4><p>Após uma onda de mortes misteriosas ,a promotora da
+                                Coroa Sarah Sinclair e o agente do SEC James Blood...<a>Ver mais</a></p></li>
+                        </ul>
+                        <ul class="artigo">
+                            <li><img src="img/download.jpg"></li>
+                            
+                            <li><h4>A casa do dragão</h4><p>Viserys anseia por um herdeiro homem.com sua
+                                esposa novamente grávida,sua filha adolescente…<a>Ver mais</a></p></li>
+                        </ul>
+                        <ul class="artigo">
+                            <li><img src="img/download (1).jpg"></li>
+                            
+                            <li><h4>PodPah</h4><p>Uma conversa descontraída,longa e livre,
+                                como uma conversa entre amigos…<a>Ver mais</a></p></li>
+                        </ul>
+                        <ul class="artigo">
+                            <li><img src="img/whinderson.webp"></li>
+                            
+                            <li><h4>Whindersson Stand Up</h4><p>No roteiro, o piauense aborda momentos do
+                                cotidiano como a pandemia,convivência diária...<a>Ver mais</a></p></li>
+                        </ul>
+                         
+                    </div>
+                    <div class="vermais-btn" >
+                        <button  ><a href="#">Ver mais</a></button>
+                    </div>  
+                        <div class="dicaD">
+                            <H2>Dica Diária</H2>
+                            <hr>
+                            <iframe  src="https://www.youtube.com/embed/1YmU8aMgpdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                            <ul class="sinopse">
+                                <li><h3>Vovó Zona 3, Tal pai, Tal filho.</h3></li>
+                                <li>Gênero: Ação, comédia e crime</li>
+                                <li><h4>Sinopse</h4></li>
+                                <li><p>Depois que seu enteado Trent testemunha um assassinato, o agente do <br> FBI Malcolm Turner traz Vovózona, seu alter ego, de volta para ajudar a <br> resolver o crime. Ele trabalha disfarçado em uma escola de artes cênicas<br>para meninas, mas, desta vez, conta com Trent e seu alter ego feminino,<br> Charmaine, para ajudá-lo...</p></li>
+                                <li><h4>Disponivel em:</h4><img src="img/download.png"></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="container">
+                            <h2>Populares</h2>
+                            <button class="arrow-left control" aria-label="Previous image"><</button>
+                            <button class="arrow-right control" aria-label="Next image">></button>
+                        <div class="galery-wrapper">
+                            <div class="galery">
+                                <img src="Galery/flow.jpg" class="item current-item">
+                                <img src="Galery/4123858.jpg" class="item">
+                                <img src="Galery/ftfxjvbxeaisd5m.webp" class="item">
+                                <img src="Galery/PT-BR_LCDP_S5_Main_Vertical_RGB_PRE-691x1024.jpg" class="item">
+                                <img src="Galery/MV5BNTgwNjI2NDktOTA1Mi00NGY0LTliNGQtNTIzOGY1MDYzOTg4XkEyXkFqcGdeQXVyNDEyNjEzOTg@._V1_.jpg" class="item">
+                                <img src="Galery/fde04f56-1afb-4c71-9ff2-97dac723f8d8.jpg" class="item">
+                                <img src="Galery/2TDA3sIwNh3QxUcLdCeg83bDZRG.jpg" class="item">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                  
+            </div>
+                    
+              
+               
+    </main>
+    <footer>
+      
+    </footer>
+</body>
+</html>

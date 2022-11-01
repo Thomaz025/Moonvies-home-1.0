@@ -1,0 +1,1047 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+/*Cabeçalho*/
+#header{
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    
+}   
+
+
+/*---------tipografia---------*/
+.tipografia{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    
+    
+
+    
+}
+.tipografia a{
+    color:#FFE36D;
+    font-size: large;
+    
+   
+
+}
+.tipografia a:hover{
+    opacity: 0.7;
+}
+/*---------tipografia---------*/
+
+/*---------Campo de Busca---------*/
+
+.pesquisar {
+    display:flex;
+    align-items:center;
+    width: 28rem;   
+    height: 2rem;
+    padding: 1rem;
+    border-radius:20px;
+    
+    
+    
+    
+}
+
+
+input:focus , textarea:focus{
+    border: none;
+    outline: 0;
+}
+
+
+
+.busca{
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#icons{
+    
+    color:black;
+    width: 1.8rem;
+    height: 1.8rem;  
+    background-color: #FFE36D;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+   
+
+}
+#icons:hover{
+    background-color: #ffe26dc1;
+
+
+}
+/*---------Campo de Busca---------*/
+
+/*--------Menu Hamburguer-----------*/
+#burguer{
+    background: transparent;
+    width:50px ;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-top:20px;
+    cursor: pointer;
+    
+}
+
+
+
+
+.line{
+    
+    background-color: #FFE36D;
+    width:1.5rem;
+    height: .1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5px;
+    border-radius: 10px;
+
+}
+
+#burguer:hover{
+    opacity: 0.7;
+
+}
+.direitos{
+    font-size: x-small;
+    color: #FFE36D;
+}
+
+
+/*--------Menu Hamburguer-----------*/
+
+/*--------ITENSBURGUER-----------*/
+#nav-bar{
+    position: fixed;
+    margin-top: 4.5rem;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 100vh;
+    width: 17.5%; 
+    padding-left: 1rem;
+    animation: alternate slide 0.5s;
+    z-index: 100;
+
+   
+    
+}
+.direitos{
+    font-size: small;
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+@keyframes slide{
+    0%{
+        margin-left: -100px;
+    }
+    
+    100%{
+        margin-left: 0;
+    }
+
+
+}
+
+
+
+.nav-list a{
+    color: #FFE36D;
+
+}
+.nav-list a:hover{
+    opacity: 0.7;
+
+
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style:none;
+    margin-top: 1rem;
+    
+
+}
+.nav-list a{
+    padding: 1px;
+}
+
+.divnav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0.5rem;
+    
+    
+    
+
+   
+}
+.divnav1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0.3rem;
+
+
+}
+#home{
+    
+    margin: .5rem;
+    width: 1.4rem;
+    height: 1.5rem;
+    background-color: #FFE36D;
+    border-radius: 10px;
+
+}
+
+#navlink{
+    margin-left: -1.0rem;
+
+}
+
+
+/*--------ITENSBURGUER-----------*/
+
+/*--------ENTRAR-----------*/
+.login-button{
+    display: flex;
+    justify-content:right ;
+    align-items: right;
+    margin-right: 1rem;
+    
+    
+}
+.login-button button{
+    width: 80px;
+    height:30px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:#FFE36D;
+    cursor: pointer;
+
+}
+
+.login-button button:hover{
+    opacity: 0.7;
+
+
+}
+
+.login-button a{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.login-button a:hover{
+    opacity: 0.7;
+}
+
+
+
+/*--------Slideshow-----------*/
+
+.content{
+    height: 35rem;
+    width: 90.5rem;
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,  -50%);
+    
+    
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    background-color: #2C2C2C;
+    border-radius:10px ;
+}
+.bar{
+    width:15px;
+    height: 15px ;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: rgba(255, 255, 255, 0.855);
+
+}
+
+
+.content input{
+    display:none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width:20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+   
+    
+
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0px;
+} 
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+
+
+/*----------------Artigos---------------*/
+.Rartigos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    top: 80%;
+    width: 100vw;
+}
+.artigos{
+    background-color: #2C2C2C;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 10px;
+}
+.artigo{
+    display: flex;
+    justify-content: left;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.artigo img{
+    width: 10rem;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.artigo img:hover{
+    opacity: 0.7;
+}
+.artigo li{
+   width: 45%;
+    
+}
+.artigo a{
+    
+    cursor: pointer;
+}
+.artigo h4{
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #FFE36D;
+        width: auto;
+        cursor: pointer;
+}
+.artigo h4:hover{
+    opacity: 0.7;
+}
+.artigo p {
+    color: white;
+    cursor: pointer;
+    
+}
+.artigo p:hover{
+    text-decoration: overline;
+}
+.Recentes{
+    background-color: #2C2C2C;
+    width: 100%;
+}
+.Recentes h2{
+    color: #FFE36D;
+    margin: 1rem;
+    margin-left: 5rem;
+}
+
+.vermais-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.vermais-btn button{
+    
+    border: none;
+    background-color: transparent;
+    width:4.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: red;
+    
+}
+
+/*----------------Artigos---------------*/
+
+/*----------------Dica Diária----------*/
+.dicaD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    background-color: #2C2C2C;
+    margin-bottom: 3rem;
+   
+    border-radius: 10px;
+}
+.dicaD iframe{
+    width: 65%;
+    height: 30rem;
+    margin: .5rem;
+    margin-bottom: 2.5rem;
+}
+.dicaD h2{
+    background-color: #FFE36D;
+    text-align: center;
+   color: #1f1f1f;
+    width: 8.5rem;
+    margin: .5rem;
+    margin-left:2rem ;
+    border-radius: 5px;
+}
+.dicaD hr{
+    background-color: #FFE36D;
+    border: solid#FFE36D 1px;
+}
+.sinopse{
+    margin-left: 1.5rem;
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+.sinopse img{
+    margin-top: .8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.sinopse h3{
+    background-color: #FFE36D;
+    color: #1f1f1f;
+    width:20rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: .1rem;
+    margin: .4rem;
+    margin-left: 0;
+    cursor: pointer;
+}
+.sinopse h3:hover{
+    opacity:0.7
+}
+
+/*------Populares------*/
+.container {
+    position: relative;
+    padding: 1rem;
+    max-width:95%;
+    margin:0 auto;
+    bottom: 10px;
+    background-color: #2C2C2C;
+}
+.container h2{
+    background-color: #FFE36D;
+    width: 10rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.galery-wrapper{
+    overflow-x:hidden;
+    
+   
+}
+.galery{
+    display: inline-flex;
+    flex-flow: row nowrap ;
+    gap: .2rem;
+}
+.arrow-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 2rem;
+    width: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(to left, transparent 0%, black 200%);
+}
+.arrow-right{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    width: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(to left, transparent 0%, black 200%);
+}
+.item{
+    width: 20rem;
+    height: 30rem;
+    flex-shrink: 0;
+    opacity: 0.5;  
+    transition: all 600ms ease-in-out;
+    box-shadow: 2px 2px 4px #1f1f1f;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    .content{
+        top: 35%;
+        height: 26rem;
+        width: 70rem;
+    }
+    .Rartigos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 57%;
+        width: 100vw;
+        align-items: center;
+    justify-content: center;
+    }
+    .artigos{
+        background-color: #2C2C2C;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .artigo{
+        display: flex;
+        justify-content: left;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+    .artigo img{
+        width: 10rem;
+        height: auto;
+        border-radius: 10px;
+    }
+    .artigo li{
+       width: 45%;
+        
+    }
+    .artigo a{
+        
+        cursor: pointer;
+    }
+    .artigo h4{
+            color: black;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #FFE36D;
+            width: auto;
+            cursor: pointer;
+    }
+    .artigo h4:hover{
+        opacity: 0.7;
+    }
+    .artigo p {
+        color: white;
+        
+    }
+    .artigo p:hover{
+        text-decoration: overline;
+    }
+    
+    .Recentes{
+       
+        background-color: #2C2C2C;
+        display: flex;
+        align-items: center;
+        width: 80rem;
+        
+    
+       
+    }
+    .Recentes h2{
+        color: #FFE36D;
+        margin: 1rem;
+        margin-left: 5rem;
+    }
+    
+    
+
+
+    #nav-bar{
+        position: fixed;
+        margin-top: 4.4rem;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.904);
+        height: 100%;
+        width: 40%; 
+        padding-left: 30px;
+        animation: alternate slide 0.5s;
+        z-index: 100;
+       
+        
+    }@keyframes slide{
+        0%{
+            margin-left: -100px;
+        }
+        
+        100%{
+            margin-left: 0;
+        }
+    
+    
+    }
+    
+    
+    
+    .nav-list a{
+        color: #FFE36D;
+    
+    }
+    .nav-list a:hover{
+        opacity: 0.7;
+    
+    
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style:none;
+        
+    
+    }
+    .nav-list a{
+        padding: 8px;
+    }
+    
+    .divnav{
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        
+    
+       
+    }
+    .divnav1{
+        
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        margin-top: .8rem;
+    
+    
+    }
+    #home{
+        margin: .5rem;
+        width: 1.4rem;
+        height: 1.5rem;
+        background-color: #FFE36D;
+        border-radius: 10px;
+    
+    }
+    #navlink{
+        margin-left: -1.0rem;
+    
+    }
+
+    .tipografia{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        
+        
+    
+        
+    }
+    .tipografia a{
+        color:#FFE36D;
+        font-size: large;
+        
+       
+    
+    }
+    .tipografia a:hover{
+        opacity: 0.7;
+    }
+    .pesquisar {
+        display:flex;
+        align-items:center;
+        width: 20rem;   
+        height: 2rem;
+        padding: 1rem;
+        border-radius:20px;
+        
+        
+        
+    }
+    .busca{
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #header{
+        background-color: #2C2C2C;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        display: flex;
+        z-index: 1000;
+        justify-content: space-between;
+        align-items: center;
+        
+    }   
+    .dicaD iframe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43.3rem;
+        height:30rem;
+    }
+    .pvideo{
+        width: 20rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #2C2C2C;
+        text-align: left;
+        padding: .5rem;
+    }
+    
+
+}
+
+@media (max-width:700px){
+    .content{
+        top: 33.5%;
+        height: 27rem;
+        width: 34rem;
+    }
+    #burguer{
+        background: transparent;
+        width:45px ;
+        height: 45px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin-left: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        
+    }
+    .Rartigos{
+        display: flex;
+        flex-direction: column;  
+        top: 58%;
+        width: 100%;
+        justify-content: left;
+        
+    }
+    .artigos{
+        background-color: #2C2C2C;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .artigo{
+        display: flex;
+        justify-content: left;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+    .artigo img{
+        width: 10rem;
+        height: auto;
+        border-radius: 10px;
+    }
+    .artigo li{
+       width: 45%;
+        
+    }
+    .artigo a{
+        
+        cursor: pointer;
+    }
+    .artigo h4{
+            color: black;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #FFE36D;
+            width: auto;
+            cursor: pointer;
+    }
+    .artigo h4:hover{
+        opacity: 0.7;
+    }
+    .artigo p {
+        color: white;
+        
+    }
+    .artigo p:hover{
+        text-decoration: overline;
+    }
+    #nav-bar{
+        
+        position: fixed;
+        margin-top: 4.0rem;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.904);
+        height: 100%;
+        width: 45%; 
+        padding-left: 1rem;
+        animation: alternate slide 0.5s;
+        z-index: 100;
+       font-size: medium;
+        
+    }@keyframes slide{
+        0%{
+            margin-left: -100px;
+        }
+        
+        100%{
+            margin-left: 0;
+        }
+    
+    
+    }
+    
+    
+    
+    .nav-list a{
+        color: #FFE36D;
+    
+    }
+    .nav-list a:hover{
+        opacity: 0.7;
+    
+    
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        
+        text-decoration: none;
+        list-style:none;
+        
+    
+    }
+    .nav-list a{
+        padding-left: 0.1rem;
+    }
+    
+    .divnav{
+        display: flex;
+        align-items: center;
+        margin: 0.1rem;
+        
+    
+       
+    }
+    .divnav1{
+        
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+        margin-top: .1rem;
+        margin: 0.1rem;
+    
+    
+    }
+    #home{
+        margin: .5rem;
+        width: 1.4rem;
+        height: 1.5rem;
+        background-color: #FFE36D;
+        border-radius: 10px;
+    
+    }
+    #navlink{
+        margin-left: -1.0rem;
+    
+    }
+
+    .tipografia{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+        
+        
+    
+        
+    }
+    .tipografia a{
+        color:#FFE36D;
+        font-size: large;
+        
+       
+    
+    }
+    .tipografia a:hover{
+        opacity: 0.7;
+    }
+    .pesquisar {
+        display:none;
+        align-items:center;
+        width: 8rem;   
+        height: 2rem;
+        padding: 1rem;
+        border-radius:20px;
+        
+        
+        
+    }
+    .busca{
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #header{
+        background-color: #2C2C2C;
+        width: 100%;
+        height: 4.1rem;
+        position: fixed;
+        display: flex;
+        z-index: 1000;
+        justify-content: space-between;
+        align-items: center;
+        
+    }   
+    .Recentes{
+        background-color: #2C2C2C;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        
+    
+       
+    }
+    .Recentes h2{
+        color: #FFE36D;
+        margin-left: 3rem;
+    }
+   .dicaD iframe{
+        display: flex;
+        justify-content: left;
+        height:25rem;
+        width: 95%;
+    }
+    .pvideo{
+        margin:.1rem ;
+        margin-bottom: 5rem;
+        width: 95%;
+        height: 13rem;
+        border-radius: 10px;
+        
+        background-color: #2C2C2C;
+        text-align: left;
+        padding: .5rem;
+    }
+    .H5{
+        margin-left: 1rem;
+    }
+    #h2c{
+        width: 14.5rem;
+        padding-left: .8rem;
+        margin-left: 1rem;
+        background-color: #FFE36D;
+    }
+    .h1a{
+        color: #1f1f1f;
+        
+       
+    }
+    
+}
